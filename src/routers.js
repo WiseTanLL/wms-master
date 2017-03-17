@@ -5,6 +5,9 @@ const routers = [{
 		require.ensure(['./App.vue'], () => {
 			resolve(require('./App.vue'));
 		});
+	},
+	meta: {
+		requireAuth: true
 	}
 }, {
 	path: '/login',

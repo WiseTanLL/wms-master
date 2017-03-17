@@ -1,7 +1,5 @@
 <template>
     <div class="login-page">
-        <nv-head page-type="登录">
-        </nv-head>
         <section class="page-body">
             <div class="label">
                 <input class="txt" type="text" placeholder="Access Token" v-model="token" maxlength="36">
@@ -53,8 +51,7 @@
                     }
                 });
             }
-        },
-        components: require('../components/common/user-info.vue')
+        }
     };
 </script>
 <style lang="scss">

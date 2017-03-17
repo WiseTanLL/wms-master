@@ -26,8 +26,8 @@ if (window.sessionStorage.user) {
 
 // 登录中间验证，页面需要登录而没有登录的情况直接跳转登录
 router.beforeEach((to, from, next) => {
-	if (to.matched.some(record => record.meta.requiresAuth)) {
-
+	if (to.matched.some(record => record.meta.requireAuth)) {
+		alert('sss');
 		if (store.state.userInfo.userId) {
 			next();
 		} else {
